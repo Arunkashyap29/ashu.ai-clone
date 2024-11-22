@@ -1,0 +1,77 @@
+body{
+    /* font-style: Coustard; */
+}
+
+
+.logo img{
+    height: 15vh;
+    
+
+}
+
+.logo{
+    display: flex;
+
+    justify-content: center;
+margin-top: 50px;
+
+}
+
+.first-line{
+    width: 65%;
+    height: 7px;
+    background-color: black;
+}
+
+.second-line{
+    margin-top: 10px;
+    width: 65%;
+    height: 0.5px;
+    background-color: black;
+
+}
+
+.top-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.menu a{
+ text-decoration: none;
+ color: rgb(5, 5, 5);
+ font-family: Karla;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ font-weight: 700;
+ font-size: 14px;
+ margin: 10px;
+ gap: 20px;
+}
+
+.work-with-me{
+ 
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+
+.portfolio-image img{
+    height: 20vh;
+    /* width: 20vh; */
+    border-radius: 300px;
+    border: 0.5px solid rgb(163, 161, 161);
+    margin-top: 10px;
+}
+
+.portfolio-image{
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
