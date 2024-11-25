@@ -262,6 +262,45 @@ h5
     border-bottom:  2px solid rgb(177, 177, 177);
 }
 
+/* *********************************blog start ******************************* */
+.post-list {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.post-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.date {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.date .day {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+}
+
+.date .month {
+    font-size: 14px;
+    color: #555;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 28px;
+    font-family: Coustard;
+ 
+    color: #333;
+    
+}
+
+/* ***********************************blog end ********************88 */
 .footerline{
     width: 90%;
     height: 7px;
