@@ -2,6 +2,10 @@ body,p{
     font-family: Karla;
     letter-spacing: 1px;
 }
+p{
+    color: #626262;
+    font-size: 1rem;
+}
 h1,h2,h3,h5{
     font-family: Coustard;
     letter-spacing: 1px;
@@ -81,7 +85,7 @@ h2{
 /* `````````````````````````````````````````header end```````````````````````````````````````````````````````````````` */
 
 .portfolio-image img{
-    height: 20vh;
+    height: 10vw;
     /* width: 20vh; */
     border-radius: 300px;
     border: 0.5px solid rgb(163, 161, 161);
@@ -182,29 +186,74 @@ h2{
     margin-top: -30px;
 }
 
-.happyclients img{
-    height: 50px;
-    width: 120px;
-    border:1px solid rgb(219, 219, 219);
-margin: 10px 25px;
-padding: 25px  50px;
-}
-
-/* .happyclients2 img{
-    height: 50px;
-    width: 120px;
-    border:1px solid rgb(219, 219, 219);
-    margin: 50px;
-    padding: 20px  50px;
-} */
-.happyclients{
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~happy Clients ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* 
+.happy-clients{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 70%;
-    padding: 50px;
-   margin: 0 auto;
-   place-items: center;
+    grid-template-rows: repeat(2, 2fr);
+    
+    place-items: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 60%;
+   gap: 15px;
+
 }
+.client-item img{
+   
+    width: 60%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;  
+}
+
+.client-item{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid rgb(181, 181, 181);
+  width: 230px;
+  height: auto;
+  
+
+} */
+
+.happy-clients {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    grid-template-rows: repeat(2, auto); /* Adjust row height automatically */
+    place-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%; /* Adjust for better spacing */
+    max-width: 900px; /* Set a limit for consistency */
+    gap: 30px; /* Increased gap for equal spacing */
+}
+
+.client-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(181, 181, 181);
+    width: 100%; 
+    height: 120px; /* Fixed height for uniformity */
+    /* padding: 20px;  */
+}
+
+.client-item img {
+    width: 60%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~happy client end~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
 
 .funfact img{
     height: 50px;
@@ -269,7 +318,8 @@ h5
 }
 
 .Course{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(1, );
     align-items: center;
     justify-content: center;
     margin-bottom: 80px;
@@ -415,10 +465,6 @@ text-align: center;
     display: block;
    }
    
-   .happyclients{
-    grid-template-columns: repeat(2, 1fr);
-    width: 90%;
-    }
 
     .myservices{
     display: grid;
@@ -453,6 +499,7 @@ text-align: center;
 @media (max-width:400px) {
     .myservices{ 
        width: 100%;
+       
     }
 
     .inthepress{
@@ -463,4 +510,5 @@ text-align: center;
         gap: 5px;
     }
     
+   
 }
